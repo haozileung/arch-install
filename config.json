@@ -18,9 +18,6 @@
     "linux"
   ],
   "keyboard-language": "us",
-  "mirror-region": {
-    "custom": "https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch"
-  },
   "nic": {
     "type": "NM"
   },
