@@ -19,7 +19,7 @@
   ],
   "keyboard-language": "us",
   "nic": {
-    "type": "NM"
+    "type": "nm"
   },
   "ntp": true,
   "packages": [

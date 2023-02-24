@@ -20,7 +20,7 @@
             "@pkgs": "/var/cache/pacman/pkg"
           }
         },
-        "encrypted": true,
+        "encrypted": false,
         "filesystem": {
           "format": "btrfs"
         },
@@ -42,7 +42,7 @@
             "@home": "/home"
           }
         },
-        "encrypted": true,
+        "encrypted": false,
         "filesystem": {
           "format": "btrfs"
         },
