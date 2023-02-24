@@ -22,7 +22,7 @@
     "custom": "https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch"
   },
   "nic": {
-    "type": "systemd-networkd"
+    "type": "NM"
   },
   "ntp": true,
   "packages": [
