@@ -1,5 +1,4 @@
 {
-  "dry_run": true,
   "audio": "pipewire",
   "bootloader": "systemd-bootctl",
   "custom-commands": [
@@ -18,15 +17,38 @@
     "linux"
   ],
   "keyboard-language": "us",
+  "mirror-region": {
+    "custom": {
+      "https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch": true,
+      "https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch": true,
+      "https://mirrors.aliyun.com/archlinux/$repo/os/$arch": true
+    }
+  },
   "nic": {
-    "type": "nm"
+    "type": "mn"
   },
   "ntp": true,
   "packages": [
     "git",
     "wget",
-    "fish",
-    "neovim"
+    "curl",
+    "neovim",
+    "noto-fonts-cjk",
+    "noto-fonts-extra",
+    "noto-fonts-emoji",
+    "wqy-microhei",
+    "wqy-zenhei",
+    "wqy-bitmapfont",
+    "adobe-source-han-sans-cn-fonts",
+    "adobe-source-han-serif-cn-fonts",
+    "fcitx5-im",
+    "fcitx5-rime",
+    "fcitx5-table-extra",
+    "fcitx5-chinese-addons",
+    "firefox",
+    "gnome-terminal",
+    "htop",
+    "rustup"
   ],
   "profile": "gnome",
   "sys-encoding": "utf-8",

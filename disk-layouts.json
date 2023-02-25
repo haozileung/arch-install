@@ -16,6 +16,7 @@
       {
         "btrfs": {
           "subvolumes": {
+            "@": "/",
             "@log": "/var/log",
             "@pkgs": "/var/cache/pacman/pkg"
           }
