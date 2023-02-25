@@ -5,7 +5,6 @@
     "cd /home/leung; git clone https://aur.archlinux.org/paru.git",
     "chown -R leung:leung /home/leung/paru"
   ],
-  "!encryption-password": "<xxx>",
   "filesystem": "btrfs",
   "gfx_driver": "All open-source (default)",
   "harddrives": [
@@ -48,7 +47,14 @@
     "firefox",
     "gnome-terminal",
     "htop",
-    "rustup"
+    "rustup",
+    "bat",
+    "rsync",
+    "jdk17-openjdk",
+    "nodejs-lts-hydrogen",
+    "npm",
+    "go",
+    "snapper"
   ],
   "profile": "gnome",
   "sys-encoding": "utf-8",
