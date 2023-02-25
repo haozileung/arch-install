@@ -15,13 +15,38 @@
       },
       {
         "btrfs": {
-          "subvolumes": {
-            "@": "/",
-            "@log": "/var/log",
-            "@pkgs": "/var/cache/pacman/pkg",
-            "@.snapshots": "/.snapshots",
-            "@tmp": "/tmp"
-          }
+          "subvolumes": [
+            {
+              "name": "@",
+              "mountpoint": "/",
+              "nodatacow": false,
+              "compress": false
+            },
+            {
+              "name": "@log",
+              "mountpoint": "/var/log",
+              "nodatacow": false,
+              "compress": false
+            },
+            {
+              "name": "@pkgs",
+              "mountpoint": "/var/cache/pacman/pkg",
+              "nodatacow": false,
+              "compress": false
+            },
+            {
+              "name": "@.snapshots",
+              "mountpoint": "/.snapshots",
+              "nodatacow": false,
+              "compress": false
+            },
+            {
+              "name": "@tmp",
+              "mountpoint": "/tmp",
+              "nodatacow": false,
+              "compress": false
+            }
+          ]
         },
         "encrypted": false,
         "filesystem": {
@@ -30,6 +55,7 @@
             "compress=zstd"
           ]
         },
+        "mountpoint": null,
         "wipe": true,
         "size": "100%",
         "start": "513MB",
@@ -42,9 +68,14 @@
     "partitions": [
       {
         "btrfs": {
-          "subvolumes": {
-            "@home": "/home"
-          }
+          "subvolumes": [
+            {
+              "name": "@home",
+              "mountpoint": "/home",
+              "nodatacow": false,
+              "compress": false
+            }
+          ]
         },
         "encrypted": false,
         "filesystem": {
@@ -53,6 +84,7 @@
             "compress=zstd"
           ]
         },
+        "mountpoint": null,
         "size": "100%",
         "start": "1MB",
         "type": "primary",
